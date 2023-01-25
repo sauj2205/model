@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def welcome():
-    return render_template('form.html')
+    return render_template('template/form.html')
 
 @app.route('/', methods=['POST'])
 def result():
